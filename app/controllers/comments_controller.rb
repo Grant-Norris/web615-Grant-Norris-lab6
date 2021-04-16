@@ -11,7 +11,7 @@
 #
 
 class CommentsController < ApplicationController
-  before_action :Authentication_User!
+  before_action :Authenticate_User!
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
 
   # GET /comments
