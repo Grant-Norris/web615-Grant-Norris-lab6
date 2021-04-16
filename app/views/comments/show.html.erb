@@ -7,9 +7,10 @@
 
       <div class="panel-body">
         <p>
-          <strong>Message:</strong>
-          <%= @comment.message %>
-        </p>
+        <th>Message</th>
+        <%= @comment.message %>
+        <td>User</td>
+        <%= @comment&.user&.email %>
 
         <p>
           <strong>Visible:</strong>

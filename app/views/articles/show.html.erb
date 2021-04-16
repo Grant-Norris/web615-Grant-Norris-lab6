@@ -10,7 +10,8 @@
           <strong>Title:</strong>
           <%= @article.title %>
         </p>
-
+        <td>User</td>
+        <%= @article&.user&.email %>
         <p>
           <strong>Content:</strong>
           <%= raw(@article.content) %>
