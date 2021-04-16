@@ -1,5 +1,5 @@
 def create_user
-  email = Faker::internet::email
+  email = Faker::Internet.email
   user = User.find_or_initialize_by(email: email)
   if user.new_record?
     user.password = SecureRandom.uuid
